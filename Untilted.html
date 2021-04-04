@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style7.css">
+
+    <script>
+     function validate(){
+       var user=document.getElementById("uname");
+       var pas=document.getElementById("pass");
+       var naam=document.getElementById("name");
+       var regx=/[a-z]/g;
+       var regx2=/[A-Z]/g;
+       var regx3=/[0-9]/;
+
+       
+       if( user.value ==""|| pas.value =="" || naam.value =="" ){
+
+           alert("Fill all the fields");
+           return false;
+       }
+        else if (regx.test(pas.value)&& regx2.test(pas.value) || regx3.test(pas.value)){
+            return true;
+        }
+        else{
+            alert("Invalid Password");
+            return false;
+        }
+
+    }
+       </script>
+    
+    
+</head>
+<body>
+    <h1>Sign Up!!</h1>  
+    <div id="container">
+    <iframe src="https://giphy.com/embed/kigfYxdEa5s1ziA2h1"  class="giphy-embed" ></iframe><p><a href="https://giphy.com/gifs/minions-kigfYxdEa5s1ziA2h1"></a></p>
+    
+        <form onsubmit="return validate()" action="Login.html">                                                                                                                          
+    First Name:<input id="name" type= "text" placeholder="First Name and Middle Name"><br> <br>
+    Last Name:<input type= "text" placeholder="Last Name"><br>
+    <br>
+    Username:<input id="uname" type= "text" placeholder="Enter a valid one "><br><br>
+    
+    Password:<input id="pass" type= "password" placeholder="Sssh..Its a Secret">
+    <p  ><i>Password must contain atleast one lowercase and one uppercase characters.</i></p>
+
+    
+    <button onclick=" validate()" id="btn" width="5ch"type="submit">Sign Up</button>                                    
+        </form>
+    
+        
+        <img  src="2970.gif" alt=" Gif" height="200m" width="250m">  
+    </div>
+</body>
+<script src="js/jquery.js" ></script>
+
+</html>

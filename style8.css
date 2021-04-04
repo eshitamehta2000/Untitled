@@ -1,0 +1,49 @@
+*{
+    background-color: rgb(231, 86, 86);
+}
+h1{
+    width:100%;
+    height:50px;
+    background-color: white;
+    border-radius: 25px;
+    color: rgb(75, 75, 161);
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: center;
+}
+h3{
+    background-color: white;
+}
+
+form{
+    height: 20m;
+    background-color:white;
+    text-align: center;
+    padding:1em;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: xx-large;
+    border-radius: 25px;
+    line-height: 3ch;
+    
+    
+}
+button { 
+    height: 50px; 
+    width: 500px;
+    background-color:rgb(74, 74, 216);
+    color: white;
+    font-size: medium;
+
+    } 
+    input{
+        height: 10mm;
+        width: 10cm;
+        background-color: white;
+        
+    }
+    .balloons{
+       
+        margin-left: 200m;
+    }

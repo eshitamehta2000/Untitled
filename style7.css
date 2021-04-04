@@ -1,0 +1,67 @@
+*{
+    background-color:lightblue ;
+}
+
+h1{
+    background-color:white ;
+    font-weight: bolder;
+    text-align: center;
+
+    width:100%;
+    
+    border-radius:45px;
+    padding: 1em;
+    
+}
+
+form{
+    background-color: rgb(129, 221, 129);
+    text-align: center;
+    padding:1em;
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: xx-large;
+    border-radius: 25px;
+    line-height: 3ch;
+    
+}
+
+input{
+    height: 10mm;
+    width: 10cm;
+    background-color: white;
+    
+}
+
+img{
+   float: right;
+   margin-top: 0mm;
+   background-color: lightblue;
+
+
+}
+
+p{
+    background-color:rgb(129, 221, 129);
+  font-size:5mm;
+  color: crimson;
+  
+  
+}
+button { 
+    height: 50px; 
+    width: 500px;
+    background-color:rgb(74, 74, 216);
+    color: white;
+    font-size: medium;
+
+    } 
+    #giphy-embed{
+        background-color: lightblue;
+        float: left;
+        height: 10cm;
+        width: 10cm;
+        margin: 0mm;
+    }
+  

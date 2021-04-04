@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style8.css">
+    <script src="js/jquery.js" ></script>
+
+   
+         
+         <script>
+             function validate2(){
+       var user=document.getElementById("name1");
+       var pas=document.getElementById("pass1");
+       
+       var regx=/[a-z]/g;
+       var regx2=/[A-Z]/g;
+       var regx3=/[0-9]/;
+       
+
+       
+       if( user.value ==""|| pas.value ==""  ){
+
+           alert("Fill all the fields");
+           return false;
+       }
+        else if (regx.test(pas.value)&& regx2.test(pas.value) || regx3.test(pas.value)){
+            return true;
+        }
+        else{
+            alert("Invalid Password ");
+            return false;
+        }
+    }
+         </script>
+   
+          
+       
+</head>
+<body>
+    <h1>Welcome to login page </h1>
+    <img src="tenor.gif" alt="" height="200m" width="200m">
+    <form onsubmit=" return validate2()" action="welcome.html" >
+        <h3>LOGIN</h3>
+        Username:<input id="name1" type="text" placeholder="Add Your Username">
+        <br>
+        <br>
+        Password:<input id="pass1" type="password" placeholder="Add Your Password">
+        <br>
+        <br>
+        <button onclick=" validate2()" type="submit">Login</button>
+
+    </form>
+    <img id="balloons" src="tenor2.gif" alt="" height="200m" width="200m">
+  
+</body>
+
+</html>
